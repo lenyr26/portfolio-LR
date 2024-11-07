@@ -1,58 +1,67 @@
-/* Reset de base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style global */
+/* Corps principal de la page */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0; /* Fond clair pour un contraste avec les sections colorées */
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    padding-top: 50px; /* Pour laisser de l'espace pour l'en-tête fixe */
 }
 
 /* En-tête */
 header {
-    background-color: #003366; /* Bleu foncé */
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 3em 0;
+    padding: 2em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header h1 {
     font-size: 2.5em;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    margin: 0;
 }
 
 /* Section principale */
 section {
-    margin: 3em auto;
+    max-width: 900px;
+    margin: 100px auto 0; /* Espace sous l'en-tête */
     padding: 2em;
     background-color: #fff;
-    color: #003366;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
-/* Titre de section */
+/* Titres de section */
 h2 {
-    color: #cc0000; /* Rouge vif */
     font-size: 2em;
-    text-transform: uppercase;
+    color: #2c3e50;
     margin-bottom: 1em;
-    letter-spacing: 2px;
+    border-bottom: 2px solid #3498db; /* Ligne bleue sous le titre */
+    padding-bottom: 0.3em;
 }
 
-/* Texte de paragraphe */
+/* Paragraphe */
 p {
     font-size: 1.1em;
-    color: #333;
+    color: #555;
     margin-bottom: 1.5em;
-    text-align: justify;
+    line-height: 1.8;
 }
 
-/* Image dans les sections */
+/* Image */
 .img-container {
     display: flex;
     justify-content: center;
@@ -60,73 +69,72 @@ p {
 }
 
 .img-container img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .img-container img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Effet de zoom */
 }
 
-/* Bouton de contact */
+/* Bouton */
 button {
-    background-color: #cc0000; /* Rouge vif */
-    color: white;
+    background-color: #3498db;
+    color: #fff;
     border: none;
-    padding: 12px 25px;
+    padding: 12px 20px;
     font-size: 1.1em;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    margin-top: 1em;
     text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #003366; /* Bleu foncé */
+    background-color: #2980b9; /* Couleur plus foncée au survol */
 }
 
 /* Pied de page */
 footer {
-    background-color: #003366; /* Bleu foncé */
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 1.5em;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 3em;
+    border-radius: 10px;
 }
 
 /* Liens */
 a {
-    color: #003366; /* Bleu foncé */
+    color: #3498db;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #cc0000; /* Rouge vif */
+    text-decoration: underline;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-    header {
+    body {
+        padding-top: 70px; /* Espace en haut pour l'en-tête fixe */
+    }
+
+    header h1 {
         font-size: 2em;
-        padding: 2em 0;
     }
 
     section {
-        margin: 2em;
+        margin: 60px auto;
         padding: 1.5em;
     }
 
     button {
-        width: 100%;
+        width: 100%; /* Le bouton prend toute la largeur sur mobile */
     }
 
     .img-container img {
