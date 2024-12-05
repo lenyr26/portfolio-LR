@@ -3,63 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Présentation de Leny</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+    <title>Portfolio de Leny Rodrigues</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- En-tête -->
-    <header>
-        <div class="logo">
-            <h1>Bienvenue sur ma page</h1>
-        </div>
-    </header>
 
-    <!-- Section principale -->
-    <main>
-        <!-- Section "Qui suis-je ?" -->
-        <section>
-            <h2>Qui suis-je ?</h2>
-            <p>Bonjour ! Je m'appelle <strong>Leny</strong>, j'ai 21 ans et je vis à Montsoult avec mon petit chien Marvel, un Shih Tzu roux. 
-            Je suis actuellement en <strong>troisième année de Licence</strong> et je poursuis mes études en alternance chez <strong>Aeroakart</strong>, une entreprise spécialisée dans le karting. 
-            Passionné de <strong>football</strong>, je suis une personne dynamique et toujours prête à relever de nouveaux défis.</p>
+<header>
+    <h1>Portfolio de Leny Rodrigues</h1>
+    <p>Bonjour, je m'appelle Leny Rodrigues, étudiant en troisième année de licence.</p>
+</header>
 
-            <!-- Image pleine largeur -->
-            <div class="img-container">
-                <img src="ton-image.jpg" alt="Image de présentation" class="img-responsive">
-            </div>
-        </section>
+<main>
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Bonjour ! Je m'appelle Leny, j'ai 21 ans et je vis à Montsoult avec mon petit chien Marvel, un Shih Tzu roux. Je suis actuellement en troisième année de Licence et je poursuis mes études en alternance chez Aerokart, une entreprise spécialisée dans le karting. Passionné de football, je suis une personne dynamique et toujours prête à relever de nouveaux défis.</p>
+    </section>
 
-        <!-- Section "Mon expérience et mes qualifications" -->
-        <section>
-            <h2>Mon expérience et mes qualifications</h2>
-            <p>Je suis titulaire d'un Bac Sti2D option Architecture, obtenu au lycée Romain Rolland à Goussainville. J'ai aussi obtenu mon <strong>BAFA</strong> (Brevet d'Aptitude aux Fonctions d'Animateur) option Surveillant baignade, ce qui me permet de travailler auprès des jeunes et d'encadrer des activités de loisirs.</p>
-        </section>
+    <section id="experiences">
+        <h2>Mes expériences</h2>
+        <ul>
+            <li><strong>Aerokart, 95100 Argenteuil</strong> (De Octobre 2022 à Maintenant) - Régisseur événementiel</li>
+            <li><strong>Mairie de Montsoult, 95560</strong> (De septembre 2021 à septembre 2022) - Animateur en centre de loisir</li>
+            <li><strong>Entente Sannois-Saint-Gratien</strong> (Stage de 2 mois, Avril 2023 à Juin 2023) - Chargé de projet</li>
+        </ul>
+    </section>
 
-        <!-- Section "Mes passions et centres d'intérêt" -->
-        <section>
-            <h2>Mes passions et centres d'intérêt</h2>
-            <p>Le football est l'une de mes plus grandes passions. Que ce soit sur le terrain ou devant la télé, je suis toujours captivé par ce sport. En dehors de cela, je suis également curieux de découvrir de nouvelles technologies et de nouveaux défis professionnels. J'aime aussi passer du temps avec ma famille et mes amis, ainsi qu'avec ma future femme Aucéane.</p>
+    <section id="formations">
+        <h2>Mes formations</h2>
+        <ul>
+            <li><strong>Ileps, Cergy 95100</strong> - Licence commercial</li>
+            <li><strong>Ceme, Beuille en Tourraine</strong> - BAFA option SB</li>
+            <li><strong>Lycée Romain Rolland, Goussainville</strong> - Bac STI2D option AC</li>
+        </ul>
+    </section>
 
-            <!-- Image de football -->
-            <div class="img-container">
-                <img src="autre-image.jpg" alt="Image de football" class="img-responsive">
-            </div>
-        </section>
+    <section id="interests">
+        <h2>Centres d’intérêts</h2>
+        <ul>
+            <li>PSG</li>
+            <li>Mes amis</li>
+            <li>Voyager</li>
+        </ul>
+    </section>
 
-        <!-- Bouton de contact -->
-        <section>
-            <button>Me contacter</button>
-        </section>
-    </main>
+    <section id="contact">
+        <h2>Coordonnées</h2>
+        <p>Téléphone : 06 03 97 32 31</p>
+        <p>Email : <a href="mailto:l.rodrigues@ileps.fr">l.rodrigues@ileps.fr</a></p>
+        <p>Portfolio : <a href="https://lenyr26.github.io/portfolio-LR/" target="_blank">lenyr26.github.io/portfolio-LR</a></p>
+    </section>
+</main>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2024 Leny. Tous droits réservés.</p>
-    </footer>
+<footer>
+    <div class="contact">
+        <p>Envoyez-moi un e-mail ou visitez mon portfolio pour en savoir plus.</p>
+    </div>
+</footer>
+
 </body>
 </html>
-        <p>&copy; 2024 Leny. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
+
