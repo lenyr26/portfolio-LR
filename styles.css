@@ -2,99 +2,133 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c, #85e0e0);
+    background-color: #0A0A0A;
+    color: white;
     overflow-x: hidden;
-    color: #333;
 }
 
 header {
+    background: #002244; /* Couleur bleu PSG */
+    color: #FFFFFF;
     text-align: center;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
-    font-size: 3em;
     margin: 0;
-    color: #333;
+    font-size: 2.5em;
+    text-transform: uppercase;
 }
 
-header p {
-    font-size: 1.2em;
-    color: #666;
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #003366; /* Bleu foncé */
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #C8102E; /* Rouge PSG */
+    color: white;
 }
 
 main {
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 20px;
 }
 
-.bubble {
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    text-align: center;
-    padding: 20px;
-    width: 250px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card {
+    background: #FFFFFF;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.bubble:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-.bubble h2 {
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h2 {
     font-size: 1.5em;
-    color: #333;
     margin-bottom: 10px;
+    color: #002244; /* Bleu PSG */
 }
 
-.bubble p {
+.card-content p {
+    color: #333;
     font-size: 1em;
-    color: #555;
+}
+
+button {
+    background-color: #C8102E; /* Rouge PSG */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #FF4C4C;
+    transform: scale(1.05);
 }
 
 footer {
+    background: #003366;
+    color: white;
     text-align: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
-    color: #666;
-    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    border-top: 2px solid #C8102E;
+}
+
+footer p {
+    margin: 0;
 }
 
 footer a {
+    color: #FFFFFF;
     text-decoration: none;
-    color: #007BFF;
+    font-weight: bold;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #C8102E;
 }
-
-@keyframes bubble-float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-.bubble {
-    animation: bubble-float 4s ease-in-out infinite;
 }
 
 
