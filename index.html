@@ -3,111 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Dynamique en Bleu et Rouge</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        header {
-            background-color: #003366; /* Bleu foncé */
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        main {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            padding: 20px;
-        }
-        .card {
-            background-color: white;
-            border: 2px solid #cc0000; /* Rouge */
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .card-content {
-            padding: 15px;
-            text-align: center;
-        }
-        .card-content h2 {
-            color: #003366;
-            margin: 0 0 10px;
-        }
-        .card-content p {
-            color: #666;
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Présentation de Leny</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
 </head>
 <body>
+    <!-- En-tête -->
     <header>
-        <h1>Bienvenue sur mon site dynamique</h1>
-        <p>Explorez nos sections remplies de photos et descriptions</p>
+        <div class="logo">
+            <h1>Bienvenue sur ma page</h1>
+        </div>
     </header>
 
+    <!-- Section principale -->
     <main>
-        <div class="card">
-            <img src="photo1.jpg" alt="Photo 1">
-            <div class="card-content">
-                <h2>Section 1</h2>
-                <p>Voici une description pour la première section. Tout est interactif et esthétique !</p>
-            </div>
-        </div>
+        <!-- Section "Qui suis-je ?" -->
+        <section>
+            <h2>Qui suis-je ?</h2>
+            <p>Bonjour ! Je m'appelle <strong>Leny</strong>, j'ai 21 ans et je vis à Montsoult avec mon petit chien Marvel, un Shih Tzu roux. 
+            Je suis actuellement en <strong>troisième année de Licence</strong> et je poursuis mes études en alternance chez <strong>Aeroakart</strong>, une entreprise spécialisée dans le karting. 
+            Passionné de <strong>football</strong>, je suis une personne dynamique et toujours prête à relever de nouveaux défis.</p>
 
-        <div class="card">
-            <img src="photo2.jpg" alt="Photo 2">
-            <div class="card-content">
-                <h2>Section 2</h2>
-                <p>Cette section met en avant un contenu dynamique avec des visuels captivants.</p>
+            <!-- Image pleine largeur -->
+            <div class="img-container">
+                <img src="ton-image.jpg" alt="Image de présentation" class="img-responsive">
             </div>
-        </div>
+        </section>
 
-        <div class="card">
-            <img src="photo3.jpg" alt="Photo 3">
-            <div class="card-content">
-                <h2>Section 3</h2>
-                <p>Explorez nos différentes fonctionnalités et options disponibles.</p>
-            </div>
-        </div>
+        <!-- Section "Mon expérience et mes qualifications" -->
+        <section>
+            <h2>Mon expérience et mes qualifications</h2>
+            <p>Je suis titulaire d'un Bac Sti2D option Architecture, obtenu au lycée Romain Rolland à Goussainville. J'ai aussi obtenu mon <strong>BAFA</strong> (Brevet d'Aptitude aux Fonctions d'Animateur) option Surveillant baignade, ce qui me permet de travailler auprès des jeunes et d'encadrer des activités de loisirs.</p>
+        </section>
 
-        <div class="card">
-            <img src="photo4.jpg" alt="Photo 4">
-            <div class="card-content">
-                <h2>Section 4</h2>
-                <p>Nous créons des designs modernes et intuitifs pour tous.</p>
+        <!-- Section "Mes passions et centres d'intérêt" -->
+        <section>
+            <h2>Mes passions et centres d'intérêt</h2>
+            <p>Le football est l'une de mes plus grandes passions. Que ce soit sur le terrain ou devant la télé, je suis toujours captivé par ce sport. En dehors de cela, je suis également curieux de découvrir de nouvelles technologies et de nouveaux défis professionnels. J'aime aussi passer du temps avec ma famille et mes amis, ainsi qu'avec ma future femme Aucéane.</p>
+
+            <!-- Image de football -->
+            <div class="img-container">
+                <img src="autre-image.jpg" alt="Image de football" class="img-responsive">
             </div>
-        </div>
+        </section>
+
+        <!-- Bouton de contact -->
+        <section>
+            <button>Me contacter</button>
+        </section>
     </main>
 
+    <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 Mon Site Dynamique. Tous droits réservés.</p>
+        <p>&copy; 2024 Leny. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+        <p>&copy; 2024 Leny. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
