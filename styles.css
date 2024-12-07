@@ -1,1 +1,91 @@
-/* Palette de couleurs */ :root { --bleu-clair: #5dade2; /* Bleu clair pour le texte */ --bleu-fonce: #2c3e50; /* Bleu foncé pour le fond */ --blanc: #ffffff; /* Blanc pour le texte secondaire */ --gris-clair: #f4f4f4; /* Gris clair pour les sections */ } /* Style global */ body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--bleu-fonce); color: var(--blanc); line-height: 1.6; box-sizing: border-box; } /* En-tête */ header { background: linear-gradient(to right, #1e2a47, #5dade2); color: var(--blanc); text-align: center; padding: 100px 20px; } header h1 { font-size: 3rem; margin: 0; animation: fadeIn 1s ease-out; } header p { font-size: 1.2rem; animation: fadeIn 2s ease-out; } /* Animation fadeIn */ @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } /* Navigation */ nav { background-color: var(--bleu-clair); padding: 10px 0; text-align: center; } nav ul { list-style: none; padding: 0; margin: 0; display: inline-flex; } nav ul li { margin: 0 20px; } nav a { color: var(--bleu-fonce); text-decoration: none; font-size: 1.2rem; text-transform: uppercase; transition: color 0.3s ease; } nav a:hover { color: var(--blanc); } /* Sections */ .section { padding: 40px 20px; margin: 40px auto; max-width: 900px; background-color: var(--gris-clair); border-radius: 12px; position: relative; } .section-header h2 { font-size: 2.5rem; color: var(--bleu-fonce); margin-bottom: 20px; } .section-header .circle { width: 30px; height: 30px; background-color: var(--bleu-clair); border-radius: 50%; position: absolute; top: 10px; right: 10px; } .triangle { width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-bottom: 20px solid var(--bleu-clair); margin-top: 20px; } .section p { font-size: 1.1rem; color: var(--bleu-fonce); line
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil et Liens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 8px;
+        }
+
+        .profile-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 2px solid #90caf9;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1565c0;
+            font-size: 16px;
+            position: relative;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #42a5f5;
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #42a5f5;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile-photo">
+            <img src="https://via.placeholder.com/60" alt="Photo de Profil">
+        </div>
+        <nav class="nav-links">
+            <a href="#presentation">Ma Présentation</a>
+            <a href="#formations">Mes Formations</a>
+            <a href="#experiences">Mes Expériences Professionnelles</a>
+        </nav>
+    </div>
+</body>
+</html>
