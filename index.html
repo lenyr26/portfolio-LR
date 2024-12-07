@@ -3,59 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Présentation de Leny</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+    <title>Profil et Liens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .profile-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 2px solid #90caf9;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1565c0;
+            font-size: 16px;
+            position: relative;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: #42a5f5;
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #42a5f5;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #1565c0;
+            border-bottom: 2px solid #42a5f5;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        p, ul {
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- En-tête -->
-    <header>
-        <div class="logo">
-            <h1>Bienvenue sur ma page</h1>
+    <div class="header">
+        <div class="profile-photo">
+            <img src="https://via.placeholder.com/60" alt="Photo de Profil">
         </div>
-    </header>
+        <nav class="nav-links">
+            <a href="#presentation">Ma Présentation</a>
+            <a href="#formations">Mes Formations</a>
+            <a href="#experiences">Mes Expériences Professionnelles</a>
+        </nav>
+    </div>
 
-    <!-- Section principale -->
-    <main>
-        <!-- Section "Qui suis-je ?" -->
-        <section>
-            <h2>Qui suis-je ?</h2>
-            <p>Bonjour ! Je m'appelle <strong>Leny</strong>, j'ai 21 ans et je vis à Montsoult avec mon petit chien Marvel, un Shih Tzu roux. 
-            Je suis actuellement en <strong>troisième année de Licence</strong> et je poursuis mes études en alternance chez <strong>Aeroakart</strong>, une entreprise spécialisée dans le karting. 
-            Passionné de <strong>football</strong>, je suis une personne dynamique et toujours prête à relever de nouveaux défis.</p>
+    <div id="presentation" class="content">
+        <h2>Ma Présentation</h2>
+        <p>Bonjour ! Je m'appelle Leny, j'ai 21 ans et je vis à Montsoult avec mon petit chien Marvel, un Shih Tzu roux. Je suis actuellement en troisième année de Licence et je poursuis mes études en alternance chez Aeroakart, une entreprise spécialisée dans le karting. Passionné de football, je suis une personne dynamique et toujours prête à relever de nouveaux défis.</p>
+    </div>
 
-            <!-- Image petite largeur -->
-            <div class="img-container">
-                <img src="chien roux" alt="Image de présentation" class="img-responsive">
-            </div>
-        </section>
+    <div id="formations" class="content">
+        <h2>Mes Formations</h2>
+        <ul>
+            <li>BAC STI2D Option Architecture au lycée Romain Roland à Goussainville - Juin 2021</li>
+            <li>BAFA option SB céméa - Avril 2022</li>
+        </ul>
+    </div>
 
-        <!-- Section "Mon expérience et mes qualifications" -->
-        <section>
-            <h2>Mon expérience et mes qualifications</h2>
-            <p>Je suis titulaire d'un Bac Sti2D option Architecture, obtenu au lycée Romain Rolland à Goussainville. J'ai aussi obtenu mon <strong>BAFA</strong> (Brevet d'Aptitude aux Fonctions d'Animateur) option Surveillant baignade, ce qui me permet de travailler auprès des jeunes et d'encadrer des activités de loisirs.</p>
-        </section>
-
-        <!-- Section "Mes passions et centres d'intérêt" -->
-        <section>
-            <h2>Mes passions et centres d'intérêt</h2>
-            <p>Le football est l'une de mes plus grandes passions. Que ce soit sur le terrain ou devant la télé, je suis toujours captivé par ce sport. En dehors de cela, je suis également curieux de découvrir de nouvelles technologies et de nouveaux défis professionnels. J'aime aussi passer du temps avec ma famille et mes amis, ainsi qu'avec ma future femme Aucéane.</p>
-
-            <!-- Image de football -->
-            <div class="img-container">
-                <img src="autre-image.jpg" alt="Image de football" class="img-responsive">
-            </div>
-        </section>
-
-        <!-- Bouton de contact -->
-        <section>
-            <button>Me contacter</button>
-        </section>
-    </main>
-
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2024 Leny. Tous droits réservés.</p>
-    </footer>
+    <div id="experiences" class="content">
+        <h2>Mes Expériences Professionnelles</h2>
+        <ul>
+            <li>Stagiaire chez Intersport du 1 Décembre 2022 au 25 Janvier 2023</li>
+            <li>Stagiaire à L'ESSG du 5 Avril au 25 Juin</li>
+            <li>Animateur dans centre de loisir au sein de la commune de Montsoult de Septembre 2021 à Septembre 2022</li>
+            <li>Alternant Chef de Projet chez Aerokart du 18 Octobre 2023 à Aujourd'hui</li>
+        </ul>
+    </div>
 </body>
 </html>
