@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -100,6 +99,20 @@
         ul {
             padding-left: 20px;
         }
+
+        .photo-grid {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .photo-grid img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -125,6 +138,11 @@
             <li>BAC STI2D Option Architecture au lycée Romain Roland à Goussainville - Juin 2021</li>
             <li>BAFA option SB céméa - Avril 2022</li>
         </ul>
+        <div class="photo-grid">
+            <img src="https://via.placeholder.com/100" alt="Formation 1">
+            <img src="https://via.placeholder.com/100" alt="Formation 2">
+            <img src="https://via.placeholder.com/100" alt="Formation 3">
+        </div>
     </div>
 
     <div id="experiences" class="content">
@@ -135,6 +153,12 @@
             <li>Animateur dans centre de loisir au sein de la commune de Montsoult de Septembre 2021 à Septembre 2022</li>
             <li>Alternant Chef de Projet chez Aerokart du 18 Octobre 2023 à Aujourd'hui</li>
         </ul>
+        <div class="photo-grid">
+            <img src="https://via.placeholder.com/100" alt="Experience 1">
+            <img src="https://via.placeholder.com/100" alt="Experience 2">
+            <img src="https://via.placeholder.com/100" alt="Experience 3">
+        </div>
     </div>
 </body>
 </html>
+
